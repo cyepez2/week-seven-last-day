@@ -1,8 +1,10 @@
-def zip():
+def zip1():
   # zip
   # Notice the format enumerate actually returns, let's take a look by transforming it to a list()
   # list(enumerate('abcde'))
-  print("zip")
+  mylist1 = [1,2,3,4,5]
+  mylist2 = ['a','b','c','d','e']
+  print(list(zip(mylist1, mylist2)))
   
   
   # It was a list of tuples, meaning we could use tuple unpacking during our for loop. This data structure is actually very common in Python , especially when working with outside libraries. You can use the zip() function to quickly create a list of tuples by "zipping" up together two lists.
@@ -12,7 +14,7 @@ def zip():
   mylist2 = ['a','b','c','d','e']
   
   # This one is also a generator! We will explain this later, but for now let's transform it to a list
-  zip(mylist1,mylist2)
+  print(zip(mylist1,mylist2))
   
   
   # list(zip(mylist1,mylist2))
@@ -52,9 +54,9 @@ def zip():
   
   # Use the zip function, loops, and the following lists of countries and capitals to solve it quickly and efficiently.
   
-  # capitals = ["Berlin", "Tokyo", "Paris", "Helsinki", "Ottawa", "Canberra"]
-  # countries = ["Germany", "Japan", "France", "Finland", "Canada", "Australia"]
-  
+  capitals = ["Berlin", "Tokyo", "Paris", "Helsinki", "Ottawa", "Canberra"]
+  countries = ["Germany", "Japan", "France", "Finland", "Canada", "Australia"]
+  print(list(zip(capitals,countries)))
   
   
   # Zip Practice #2
